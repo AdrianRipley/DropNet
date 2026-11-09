@@ -22,10 +22,10 @@ central identity registry or an authority that approves each communication.
 
 ## Open implementation
 
-We intend to publish code and specifications under explicit free licenses, document
-formats, support compatible implementations and make forks possible. The concrete
-licenses still need to be chosen. We should reuse existing work where appropriate
-and contribute improvements back when possible.
+Original DropNet code, tests, specifications and documentation are published under
+GPL-3.0-or-later; third-party notices remain applicable. See [COPYING.md](COPYING.md).
+We document formats, support compatible implementations and make forks possible.
+We should reuse existing work where appropriate and contribute improvements back.
 
 ## Verifiable trust
 
@@ -36,8 +36,8 @@ Spam, multiple identities and malicious relays require explicit design work.
 ## Privacy demonstrated by evidence
 
 Encryption, authentication, metadata protection and anonymity are distinct
-properties. Each needs design and evaluation. The current local prototype does
-not implement these protections and must use synthetic messages.
+properties. Each needs design and evaluation. The v0.4.0 demo, including the Android
+app, does not implement these protections and must use synthetic messages.
 
 ## Resistance with honest limits
 

@@ -74,6 +74,10 @@ state is bounded; do not infer unlimited exactly-once delivery.
 
 ## Participate
 
+**Testers wanted:** use the [demo release](https://github.com/AdrianRipley/DropNet/releases/tag/v0.4.0-demo)
+and [testing guide](TESTING.md) for the three-phone relay experiment or independent
+Python reproduction. Failed attempts and unclear instructions are useful reports too.
+
 Read the [manifesto](MANIFESTO.md), [roadmap](ROADMAP.md),
 [contribution guide](CONTRIBUTING.md) and [governance proposal](GOVERNANCE.md).
 Use issues for reproducible problems and Discussions for project ideas.
