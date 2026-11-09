@@ -62,7 +62,7 @@ jobs:
             adb install -r app/build/outputs/apk/debug/app-debug.apk
             adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
             mkdir -p build/reports/relay
-            bash -euo pipefail -c 'timeout 120 adb shell am instrument -w org.dropnet.demo.test/org.dropnet.demo.SelfTestInstrumentation | tee build/reports/relay/instrumentation.txt; tr -d "\r" < build/reports/relay/instrumentation.txt | grep -Fx "INSTRUMENTATION_RESULT: dropnet_status=passed"'
+            bash --noprofile --norc -eo pipefail -c 'timeout 120 adb shell am instrument -w -r org.dropnet.demo.test/org.dropnet.demo.SelfTestInstrumentation | tee build/reports/relay/instrumentation.txt; tr -d "\r" < build/reports/relay/instrumentation.txt | grep -Fx "INSTRUMENTATION_RESULT: dropnet_status=passed"'
 
       - name: Upload APKs and test evidence
         if: always()
