@@ -43,10 +43,11 @@ For a running Android emulator or connected test device:
 ```sh
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
-adb shell am instrument -w org.dropnet.demo.test/org.dropnet.demo.SelfTestInstrumentation
+adb shell am instrument -w -r org.dropnet.demo.test/org.dropnet.demo.SelfTestInstrumentation
 ```
 
-Success explicitly reports `dropnet_status=passed` and a `PASS:` explanation.
+Raw output (`-r`) exposes `dropnet_status=passed` and a `PASS:` explanation;
+without `-r`, Android may display only the formatted stream and hide the status field.
 This runner is deliberately independent of AndroidX and tests the native SQLite
 and codec path. It does not drive or emulate BLE. A test failure reports
 `dropnet_status=failed` and an error; do not infer success merely from process exit.
