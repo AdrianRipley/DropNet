@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "header": "big endian: magic DNCS, version 1, kind 1, uint16 count, uint64 salt",
+  "hash": "first 8 bytes of SHA-256(uint64-big-endian-salt || UTF-8-ID)",
+  "vectors": [
+    {
+      "name": "empty",
+      "salt": 0,
+      "ids": [],
+      "fingerprints": [],
+      "frame_hex": "444e4353010100000000000000000000"
+    },
+    {
+      "name": "unicode",
+      "salt": 72623859790382856,
+      "ids": [
+        "messaggio-é-🙂"
+      ],
+      "fingerprints": [
+        "3270a4b90ce6fe4c"
+      ],
+      "frame_hex": "444e43530101000101020304050607083270a4b90ce6fe4c"
+    },
+    {
+      "name": "multiple",
+      "salt": 18446744073709551615,
+      "ids": [
+        "m000",
+        "m001",
+        "m002"
+      ],
+      "fingerprints": [
+        "cbcf22ac7ecc583d",
+        "6b7ed50653d98471",
+        "ad2c8eb6dc08ba5a"
+      ],
+      "frame_hex": "444e435301010003ffffffffffffffff6b7ed50653d98471ad2c8eb6dc08ba5acbcf22ac7ecc583d"
+    },
+    {
+      "name": "max_utf8",
+      "salt": 19,
+      "ids": [
+        "éééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé"
+      ],
+      "fingerprints": [
+        "f2afa7eaf3c7e334"
+      ],
+      "frame_hex": "444e4353010100010000000000000013f2afa7eaf3c7e334"
+    }
+  ]
+}
