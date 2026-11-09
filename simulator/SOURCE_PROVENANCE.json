@@ -1,0 +1,22 @@
+{
+  "description": "Hashes of pre-publication project source; public packaging deviations are documented in PUBLICATION_NOTES.md. Paths are relative to the reference simulator.",
+  "source_sha256": {
+    "README.md": "b18ec4f13d28c0d207c833032ab9097f291338b39c348806727f8445e4d4ac68",
+    "SPEC.md": "4d95e5202a0d14e6eb7dca26002d283b3ba825153f2674c6114fd1eb05698ead",
+    "dropnet/__init__.py": "e4fae6938597189789fbde6155bc1e5ec0fee435ce4c61fc4dc7a092a483df85",
+    "dropnet/compact.py": "ed0e7e049e2a7efe56d5e90f11b39b90cf8452d4e6a061383917c7da5e93761e",
+    "dropnet/core.py": "c7e56faaffa1b1cf91677a91e4ef03a976889876c6cad9bb00cc357fc84354cc",
+    "dropnet/experiments.py": "5761aae46ed3d213e96c14ae19831739684354b9193ad74e614ef6bffa4bfc44",
+    "dropnet/local_node.py": "84e1b26f5172d3fd7fd1cda7323217c8b79a0161fcc5d83e3be04474efa58511",
+    "tests/test_compact.py": "73c259fef6545d34b7df7370e5900a5d1b75bc0c3bcba0a45f2350e9c8e61ffa",
+    "tests/test_core.py": "98b95316d4b2bf71a21cd7f81d0eeb71a7c7beec5a8f1aae57a51f7b12e60632",
+    "tests/test_experiments.py": "b45020a5e5ef0b198a8a4223141d2a78b1153c753dedff152cad9e6bcaaab2fc",
+    "tests/test_inventory.py": "19ffd0b6e50c1bd181955c444ccab60f47ac8f06b9b92b5e73095543caa49d49",
+    "tests/test_local_node.py": "262db775e2314925767a72043d51a12a5875c21cec9fa804a32fbacc321312b2",
+    "tests/test_review_regressions.py": "6fe35a67ef778dd7833681353df48e77fee71df20e7d48472acc6367f6d81154",
+    "scripts/run_experiments.py": "da8843d6f3392e332ff894e406329b36fdd48ed5fa0c16b32c4411d7e12b82d6",
+    "scripts/run_local_demo.py": "e55a5e8591238a6bf2cfaf2bd4741c2d4b6f29176a133b17fef607d808081353",
+    "scripts/validate_campaign.py": "cff653d20c3d526c3aac8eeed2784ed3ea0f52a76985e37386bdeae15ee90118",
+    "tests/fixtures/compact_vectors.json": "35770eb5bc956bb10b89632f4b7ab8888cd1c9c3ef27902bdcdccca5cf2677c1"
+  }
+}
