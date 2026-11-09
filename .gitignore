@@ -8,3 +8,15 @@ __pycache__/
 private/
 local_outputs/
 scripts/outputs/
+
+# Project-local build and verification outputs
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+*.hprof
+verification/

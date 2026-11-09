@@ -1,8 +1,8 @@
 # Contributing to DropNet
 
-DropNet is in its initial planning and source-release preparation stage. The
-implementation is not included in this repository yet, and its release license
-must be selected before accepting code for that release.
+DropNet is an experimental source release under GPL-3.0-or-later. Contributions
+to original project files use the same license; identify the provenance and license
+of third-party material. See COPYING.md and THIRD_PARTY_NOTICES.md.
 
 ## Start with a concrete question
 
@@ -21,8 +21,8 @@ what you tested from what remains hypothetical.
 
 Do not silently change units, expiry rules, traffic limits, message selection,
 loss assumptions or delivery criteria. Preserve original experimental inputs and
-outputs. Future implementation contributions will include reproducible validation
-instructions alongside the source release.
+outputs. Implementation contributions must include reproducible validation instructions
+and relevant regression tests. Run the commands in README.md before proposing a release.
 
 ## Report an experiment
 
@@ -40,4 +40,4 @@ See the [governance proposal](GOVERNANCE.md) for how decisions and responsibilit
 could be shared as the project grows.
 
 Do not post credentials or exploitable vulnerability details in a public issue.
-A private reporting channel must be established before the implementation release.
+Follow SECURITY.md for the private reporting channel and current scope.

@@ -2,15 +2,16 @@
 
 Milestones describe results to work toward, not release dates or completed work.
 
-## 1. Prepare the source release
+## 1. Reproducible source release
 
-- Select explicit licenses and review the provenance of the files to be released.
+- GPL-3.0-or-later is selected; source provenance and third-party notices accompany the release.
 - Package the simulator, tests, specification and required regression fixtures.
 - Reproduce the tests and full experiment campaign from the release package.
 - Establish a private security reporting channel.
 
-Completion means another person can reproduce the documented checks from the
-published files without private coordination records or unlisted local inputs.
+The source package includes the simulator, tests and historical synthetic fixtures.
+Local reproduction passes. Independent reproduction from the public repository
+remains a welcome contribution; no private coordination records are required.
 
 ## 2. Compare existing approaches
 
