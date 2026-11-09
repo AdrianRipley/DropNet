@@ -10,8 +10,11 @@ Read the [manifesto](MANIFESTO.md) and [roadmap](ROADMAP.md). Open an issue desc
 the problem, who encounters it, possible alternatives and a way to compare them.
 Technical criticism and suggestions to reuse existing projects are welcome.
 
-Useful contributions include Android feasibility work, protocol comparisons,
-threat modelling, interface proposals and improvements to the documentation.
+Useful contributions include physical Android/BLE experiments, independent Python
+reproduction, protocol comparisons, threat-model review, interface proposals and
+documentation. Start with [TESTING.md](TESTING.md) for a bounded task and report
+format. The Android implementation exists; successful phone-to-phone behavior
+still needs evidence.
 
 ## Propose changes
 

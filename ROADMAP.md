@@ -2,12 +2,29 @@
 
 Milestones describe results to work toward, not release dates or completed work.
 
+## Current priorities after v0.4.0-demo
+
+The [demo release](https://github.com/AdrianRipley/DropNet/releases/tag/v0.4.0-demo)
+now includes Android APK, source and validation reports. The foreground BLE path
+is implemented; physical-phone interoperability, range and energy remain unverified.
+Emulator persistence tests are separate evidence from radio tests.
+
+1. Run the three-phone relay experiment using the same identified APK and synthetic text.
+2. Obtain independent reproduction of the Python demo and documented checks.
+3. Review message states: local save, relay acceptance, recipient receipt and expiry.
+4. Design identity verification and end-to-end protection in parallel, comparing existing components.
+5. After the foreground baseline, investigate screen-off/background behavior and measure energy.
+
+See [TESTING.md](TESTING.md) for the first contribution and reporting checklist.
+Local diagnostics should use explicit units and a separate schema from simulated
+traffic; the simulator validator does not validate physical BLE measurements.
+
 ## 1. Reproducible source release
 
 - GPL-3.0-or-later is selected; source provenance and third-party notices accompany the release.
-- Package the simulator, tests, specification and required regression fixtures.
-- Reproduce the tests and full experiment campaign from the release package.
-- Establish a private security reporting channel.
+- The released package contains the simulator, tests, specification and required regression fixtures.
+- Release reports record successful local tests and the full experiment campaign.
+- The private reporting channel is documented in [SECURITY.md](SECURITY.md).
 
 The source package includes the simulator, tests and historical synthetic fixtures.
 Local reproduction passes. Independent reproduction from the public repository
