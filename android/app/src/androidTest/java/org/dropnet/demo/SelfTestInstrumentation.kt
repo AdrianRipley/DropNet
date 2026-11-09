@@ -5,7 +5,7 @@ import android.app.Activity
 import android.app.Instrumentation
 import android.os.Bundle
 
-/** Invoke with adb shell am instrument -w org.dropnet.demo.test/org.dropnet.demo.SelfTestInstrumentation. */
+/** Invoke with adb shell am instrument -w -r org.dropnet.demo.test/org.dropnet.demo.SelfTestInstrumentation; -r exposes the status field. */
 class SelfTestInstrumentation : Instrumentation() {
     override fun onCreate(arguments: Bundle?) { super.onCreate(arguments); start() }
     override fun onStart() {
